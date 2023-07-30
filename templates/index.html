@@ -1,0 +1,701 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dreams Travel With Travelo</title>
+    <link href="{% static "images/favicon.jpg" %}" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Travel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+   
+    <link
+      href="{% static "css/bootstrap.css" %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    
+    <link rel="stylesheet" href="{% static "css/chocolat.css" %}" type="text/css" />
+    
+
+  
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="{% static "css/flexslider.css" %}"
+      type="text/css"
+      media="screen"
+    />
+
+   
+    <link href="{% static "css/font-awesome.css" %}" rel="stylesheet" />
+    
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Raleway:100,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <!-- //font -->
+    <script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <!-- banner -->
+    {% comment %} {% include 'header.html' %} {% endcomment %}
+    <div class="banner">
+      <div class="agile_dot_info">
+        <div class="w3-header-bottom">
+          <div class="container">
+            <div class="w3layouts-logo">
+              <h1>
+                <a href="home">Travelo </a>
+              </h1>
+            </div>
+            <div class="top-nav">
+              <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                  >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div
+                  class="collapse navbar-collapse"
+                  id="bs-example-navbar-collapse-1"
+                >
+                  <ul class="nav navbar-nav">
+                    <li class="first-list">
+                      <a class="active" href="home">Home</a>
+                    </li>
+                    <li><a href="{% url "about" %}">About</a></li>
+                    <li><a href="{% url "flights" %}">Flights</a></li>
+                    `
+                    <li><a href="{% url "hotels" %}">Hotels</a></li>
+                    <li class="dropdown">
+                      <a
+                        href="#"
+                        class="dropdown-toggle hvr-sweep-to-right"
+                        data-hover="Pages"
+                        data-toggle="dropdown"
+                        >PAGES <b class="caret"></b
+                      ></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="{% url "popular_destinations" %}"
+                            >Popular Destinations</a
+                          >
+                        </li>
+                        <li><a href="{% url "best_tours" %}">Best Tours</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="{% url "contact" %}">Contact</a></li>
+                    <li><a href="{% url "booking" %}">Booking</a></li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+              </nav>
+            </div>
+            <div class="agileinfo-social-grids">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-vk"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="banner-info">
+          <div class="container">
+            <div class="w3-banner-info">
+              <div class="slider">
+                <div class="callbacks_container">
+                  <ul class="rslides callbacks callbacks1" id="slider4">
+                    <li>
+                      <div class="w3layouts-banner-info">
+                        <h4>welcome To Dreams Travel</h4>
+                        <h3>Explore the World with Us</h3>
+                        <div class="banner_form_agileits">
+                          
+                            <div class="clearfix"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="w3layouts-banner-info">
+                        <h4>welcome to travelo</h4>
+                        <h3>
+                          Discover and book amazing travel at exclusive prices
+                        </h3>
+                        <div class="banner_form_agileits">
+                         
+                            <div class="clearfix"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="w3layouts-banner-info">
+                        <h4>welcome to travel</h4>
+                        <h3>Explore the World with Us</h3>
+                        <div class="banner_form_agileits">
+                          
+                            <div class="clearfix"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+
+                <!--banner Slider starts Here-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //banner -->
+    <!-- modal -->
+    <div
+      class="modal about-modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Travel</h4>
+          </div>
+          <div class="modal-body">
+            <div class="agileits-w3layouts-info">
+              <img src="{% static "images/about2.jpg" %}" alt="" />
+              <p>
+                Duis venenatis, turpis eu bibendum porttitor, sapien quam
+                ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
+                ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+                Pellentesque pellentesque tempor enim, in dapibus turpis
+                porttitor quis. Suspendisse ultrices hendrerit massa. Nam id
+                metus id tellus ultrices ullamcorper. Cras tempor massa luctus,
+                varius lacus sit amet, blandit lorem. Duis auctor in tortor sed
+                tristique. Proin sed finibus sem
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //modal -->
+    <!-- about -->
+    <div class="section w3ls-banner-btm-main">
+      <div class="container">
+        <div class="banner-btm">
+          <div class="col-md-6 banner-btm-g1">
+            <img src="{% static "images/about.jpg" %}" class="img-responsive" alt="" />
+          </div>
+          <div class="col-md-6 banner-btm-g2">
+            <h3 class="title-main">Welcome to Travel</h3>
+            <h4 class="sub-title">Travel services of the highest quality</h4>
+            <p>
+              Welcome to our travel site! We are a team of passionate travel
+              enthusiasts who have come together to share our love for exploring
+              new destinations, cultures, and experiences with the world.Our
+              mission is to inspire and empower travelers to embark on
+              unforgettable journeys.
+            </p>
+            <div class="find-about">
+              <a href="{% url "about" %}">About Us</a>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <h3 class="heading-agileinfo">
+      Travel Seftly With Us
+      <span>Exclusive Holidays for Any Travelers</span>
+    </h3>
+    <div class="about-grid">
+      <div class="col-md-6 about-sub-grid">
+        <div class="col-md-6 about-right about-right-flex">
+          <div class="about-bottom-text">
+            <h4 class="title1">Travel Guide</h4>
+            <p class="text">
+              As a travel guide, I also recommend that you consider the safety
+              and security of your destination before traveling.
+            </p>
+          </div>
+          <div class="about-bottom-grid about-img1"></div>
+        </div>
+        <div class="col-md-6 about-right about-right-flex">
+          <div class="about-bottom-grid about-img2"></div>
+          <div class="about-bottom-text ab1">
+            <h4 class="title1">Dream Trip</h4>
+            <p class="text">
+              As an AI language model, I don't have personal dreams, but I can
+              give you some ideas for planning your dream trip!
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-6 about-bottom-grid about-bg"></div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- //about -->
+    <!-- news -->
+    <div class="news">
+      <div class="container">
+        <h2 class="heading-agileinfo">
+          Some Our Travelers And Their Reviews<span
+            >Exclusive Holidays for Any Travelers</span
+          >
+        </h2>
+        <div class="news-agileinfo">
+          <div class="news-w3row">
+            <div class="col-md-6 wthree-news-grids">
+              <div class="col-md-3 col-xs-3 datew3-agileits">
+                <img src="{% static "images/t1.jpg" %}" class="img-responsive" alt="" />
+              </div>
+              <div class="col-md-9 col-xs-9 datew3-agileits-info">
+                <h5>
+                  <a href="#" data-toggle="modal" data-target="#myModal"
+                    >Melany Bowman</a
+                  >
+                </h5>
+                <h6>3/01/2018</h6>
+                <p>
+                  "I flew with Travelo and had a great experience. The staff
+                  were friendly and helpful, the seats were comfortable, and the
+                  in-flight entertainment was top-notch.
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 wthree-news-grids news-grids-mdl">
+              <div
+                class="col-md-3 col-xs-3 datew3-agileits datew3-agileits-fltrt"
+              >
+                <img src="{% static "images/t2.jpg" %}" class="img-responsive" alt="" />
+              </div>
+              <div
+                class="col-md-9 col-xs-9 datew3-agileits-info datew3-agileits-info-fltlft"
+              >
+                <h5>
+                  <a href="#" data-toggle="modal" data-target="#myModal"
+                    >Brixton Cooper</a
+                  >
+                </h5>
+                <h6>5/01/2018</h6>
+                <p>
+                  "We went on this tour and had an amazing time! The guide was
+                  knowledgeable and made the experience fun and engaging.
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 wthree-news-grids">
+              <div class="col-md-3 col-xs-3 datew3-agileits">
+                <img src="{% static "images/c4.jpg" %}" class="img-responsive" alt="" />
+              </div>
+              <div class="col-md-9 col-xs-9 datew3-agileits-info">
+                <h5>
+                  <a href="#" data-toggle="modal" data-target="#myModal"
+                    >Jones Bender</a
+                  >
+                </h5>
+                <h6>8/01/2018</h6>
+                <p>
+                  "I recently visited Paris and fell in love with the city. The
+                  architecture, food, and culture were all incredible. The
+                  Eiffel Tower was definitely a highlight, but there was so much
+                  to see and do. I can't wait to go back!"
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 wthree-news-grids news-grids-mdl">
+              <div
+                class="col-md-3 col-xs-3 datew3-agileits datew3-agileits-fltrt"
+              >
+                <img src="{% static "images/c5.jpg" %}" class="img-responsive" alt="" />
+              </div>
+              <div
+                class="col-md-9 col-xs-9 datew3-agileits-info datew3-agileits-info-fltlft"
+              >
+                <h5>
+                  <a href="#" data-toggle="modal" data-target="#myModal"
+                    >Myla Pineda</a
+                  >
+                </h5>
+                <h6>5/01/2018</h6>
+                <p>
+                  "The hotel was amazing! The staff were very friendly and
+                  accommodating. The room was spacious, clean, and had a great
+                  view. The breakfast was also fantastic, with a wide variety of
+                  options.
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //news -->
+
+    <!-- /services -->
+    <div class="w3-services">
+      <div class="container">
+        <h3 class="heading-agileinfo">
+          Services<span style="color: white" ;
+            >Travelers plan their trips With Us</span
+          >
+        </h3>
+        <div class="w3-services-right-grid">
+          <div class="w3-icon-grid-gap1">
+            <div class="col-md-4 w3-icon-grid1">
+              <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              <h3>Hotel Booking</h3>
+              <p>
+                To use a hotel booking service, users typically start by
+                entering their destination and travel dates.
+              </p>
+            </div>
+            <div class="col-md-4 w3-icon-grid1">
+              <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+              <h3>Air Flights</h3>
+              <p>
+                Overall, air flights are a convenient and efficient way to
+                travel long distances, connecting people and places all around
+                the world.
+              </p>
+            </div>
+
+            <div class="col-md-4 w3-icon-grid1">
+              <i class="fa fa-car" aria-hidden="true"></i>
+              <h3>Car Rentals</h3>
+              <p>
+                Car rentals can be a convenient and cost-effective way to
+                explore a destination, giving travelers the freedom to travel at
+                their own pace and on their own schedule.
+              </p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="w3-icon-grid-gap2">
+            <div class="col-md-4 w3-icon-grid1">
+              <i class="fa fa-male" aria-hidden="true"></i>
+              <h3>Travel Guides</h3>
+              <p>
+                Travel guides can be especially helpful for first-time visitors
+                to a destination or for travelers who want to make the most of
+                their time in a new place.
+              </p>
+            </div>
+            <div class="col-md-4 w3-icon-grid1">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+              <h3>Travel Insurance</h3>
+              <p>
+                Travel insurance can provide peace of mind for travelers,
+                knowing that they are protected against unexpected events that
+                may occur while on their trip.
+              </p>
+            </div>
+
+            <div class="col-md-4 w3-icon-grid1">
+              <i class="fa fa-bus" aria-hidden="true"></i>
+              <h3>Choice Of Tours</h3>
+              <p>
+                When choosing a tour, it's important to research the itinerary,
+                accommodations, transportation, and the reputation of the tour
+                company.
+              </p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <!-- //services -->
+    <!-- testimonials -->
+    <div class="testimonials">
+      <div class="container">
+        <h3 class="heading-agileinfo">
+          Testimonials<span>Exclusive Holidays for Any Travelers</span>
+        </h3>
+        <div class="flexslider-info">
+          <section class="slider1">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <div class="w3l-info1">
+                    <div class="col-md-3 testimonials-grid-1">
+                      <img src="{% static "images/t1.jpg" %}" alt="" />
+                    </div>
+                    <div class="col-md-9 testimonials-grid-2">
+                      <h4>Jonny d'cruz</h4>
+                      <h5>Spain</h5>
+                      <p>
+                        I recently took a trip to Thailand with this travel
+                        company and I couldn't be happier with my experience.
+                        From the moment I landed in Bangkok, everything was
+                        taken care of.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="w3l-info1">
+                    <div class="col-md-3 testimonials-grid-1">
+                      <img src="{% static "images/t3.jpg" %}" alt="" />
+                    </div>
+                    <div class="col-md-9 testimonials-grid-2">
+                      <h4>Richard</h4>
+                      <h5>Germany</h5>
+                      <p>
+                        The tour guides were knowledgeable and friendly, and
+                        they really went out of their way to make sure we had a
+                        great time. I particularly enjoyed the cooking class we
+                        took in Chiang Mai and the elephant sanctuary we visited
+                        in Phuket.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="w3l-info1">
+                    <div class="col-md-3 testimonials-grid-1">
+                      <img src="{% static "images/t2.jpg" %}" alt="" />
+                    </div>
+                    <div class="col-md-9 testimonials-grid-2">
+                      <h4>Carnivel</h4>
+                      <h5>America</h5>
+                      <p>
+                        The accommodations were top-notch and the itinerary was
+                        well-planned, with a perfect mix of culture, adventure,
+                        and relaxation.Overall, I would highly recommend this
+                        travel company to anyone looking for a stress-free and
+                        memorable travel experience.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- //testimonials -->
+    <!-- footer -->
+    {% comment %} {% include 'footer.html' %} {% endcomment %}
+    <div class="footer">
+      <div class="container">
+        <div class="agile-footer-grids">
+          <div class="col-md-4 agile-footer-grid">
+            <h4>History of Us</h4>
+            <p>
+              The history of US travel websites is closely linked to the growth
+              of the internet and the increasing use of technology in the travel
+              industry. Today, online travel booking is a multi-billion dollar
+              industry, and travelers have more options than ever before when it
+              comes to planning and booking their trips.
+            </p>
+          </div>
+          <div class="col-md-4 agile-footer-grid">
+            <h4>Twitter Posts</h4>
+            <ul class="w3agile_footer_grid_list">
+              <li>
+                The Best Trvel Boking Point
+                <a href="https://twitter.com/Travelers"
+                  >https://twitter.com/Travelers</a
+                >
+                <span
+                  ><i class="fa fa-twitter" aria-hidden="true"></i> 02 days
+                  ago</span
+                >
+              </li>
+              <li>
+                "Just got back from an amazing trip to Italy!
+                <a href="Travelo.com"></a>Travelo.com<span
+                  ><i class="fa fa-twitter" aria-hidden="true"></i> 03 days
+                  ago</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 agile-footer-grid">
+            <h4>Events</h4>
+            <ul>
+              <li>
+                12th Feb
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  >Curabitur</a
+                >
+              </li>
+              <li>
+                10th Mar
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  >Fusce urna</a
+                >
+              </li>
+              <li>
+                24th Mar
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  >Praesent</a
+                >
+              </li>
+              <li>
+                17th Apr
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  >Malesuada
+                </a>
+              </li>
+              <li>
+                09th May
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  >Cum sociis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 agile-footer-grid">
+            <h4>Navigation</h4>
+            <ul>
+              <li class="text"><a href="{% url "home" %}">Home</a></li>
+              <li class="text"><a href="{% url "about" %}">About</a></li>
+              <li class="text"><a href="{% url "flights" %}">Flights</a></li>
+              <li class="text"><a href="{% url "hotels" %}">Hotels</a></li>
+              <li class="text"><a href="{% url "booking" %}">Booking</a></li>
+              <li class="text"><a href="{% url "contact" %}">Contact</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+
+    <!-- footer -->
+    <div class="copy-right">
+      <div class="container">
+        <p>&copy; Travel With Travelo| Design And Develope By:Vaibhav Jagtap</p>
+      </div>
+    </div>
+    <!-- //footer -->
+
+    <script src="{% static "js/responsiveslides.min.js" %}"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: false,
+          speed: 400,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+    <!-- gallery-pop-up-script -->
+    <script src="{% static "js/jquery.chocolat.js" %}"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".view-seventh a").Chocolat();
+      });
+    </script>
+    <!-- //gallery-pop-up-script -->
+
+    <script defer src="{% static "js/jquery.flexslider.js" %}"></script>
+    <!--Start-slider-script-->
+    <script type="text/javascript">
+      $(window).load(function () {
+        $(".flexslider").flexslider({
+          animation: "slide",
+          start: function (slider) {
+            $("body").removeClass("loading");
+          },
+        });
+      });
+    </script>
+
+    <script src="{% static "js/SmoothScroll.min.js" %}"></script>
+    <script type="{% static "text/javascript" src="js/move-top.js" %}"></script>
+    <script type="{% static "text/javascript" src="js/easing.js" %}"></script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        
+
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
+  </body>
+</html>

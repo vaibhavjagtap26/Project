@@ -1,0 +1,271 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dreams Travel With Travelo</title>
+    <link href="images/favicon.jpg" rel="icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Travel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- bootstrap-css -->
+    <link
+      href="{% static "css/bootstrap.css" %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="{% static "stylesheet" href="css/style.css" %}"type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="{% static "css/font-awesome.css" %}" rel="stylesheet" />
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Raleway:100,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <!-- //font -->
+    <script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <!-- banner -->
+    {% include 'header.html' %}
+    <!-- //banner -->
+    <!-- modal -->
+    <div
+      class="modal about-modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Travel</h4>
+          </div>
+          <div class="modal-body">
+            <div class="agileits-w3layouts-info">
+              <img src="{% static "images/about2.jpg" %}" alt="" />
+              <p>
+                Duis venenatis, turpis eu bibendum porttitor, sapien quam
+                ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
+                ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+                Pellentesque pellentesque tempor enim, in dapibus turpis
+                porttitor quis. Suspendisse ultrices hendrerit massa. Nam id
+                metus id tellus ultrices ullamcorper. Cras tempor massa luctus,
+                varius lacus sit amet, blandit lorem. Duis auctor in tortor sed
+                tristique. Proin sed finibus sem
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //modal -->
+    <!-- typography -->
+    <div class="typo">
+      <div class="container">
+        <h3 class="heading-agileinfo">
+          Best Tours To Plan<span>Exclusive Holidays for Any Travelers</span>
+        </h3>
+        <div class="grid_3 grid_4 w3layouts">
+          <h3 class="hdg">Headings</h3>
+          <div class="bs-example">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <h1 id="h1.-bootstrap-heading">
+                      h1. Bootstrap heading<a
+                        class="anchorjs-link"
+                        href="#h1.-bootstrap-heading"
+                        ><span class="anchorjs-icon"></span
+                      ></a>
+                    </h1>
+                  </td>
+                  <td class="type-info">Semibold 36px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 id="h2.-bootstrap-heading">
+                      h2. Bootstrap heading<a
+                        class="anchorjs-link"
+                        href="#h2.-bootstrap-heading"
+                        ><span class="anchorjs-icon"></span
+                      ></a>
+                    </h2>
+                  </td>
+                  <td class="type-info">Semibold 30px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <h3 id="h3.-bootstrap-heading">
+                      h3. Bootstrap heading<a
+                        class="anchorjs-link"
+                        href="#h3.-bootstrap-heading"
+                        ><span class="anchorjs-icon"></span
+                      ></a>
+                    </h3>
+                  </td>
+                  <td class="type-info">Semibold 24px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4 id="h4.-bootstrap-heading">
+                      h4. Bootstrap heading<a
+                        class="anchorjs-link"
+                        href="#h4.-bootstrap-heading"
+                        ><span class="anchorjs-icon"></span
+                      ></a>
+                    </h4>
+                  </td>
+                  <td class="type-info">Semibold 18px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <h5 id="h5.-bootstrap-heading">
+                      h5. Bootstrap heading<a
+                        class="anchorjs-link"
+                        href="#h5.-bootstrap-heading"
+                        ><span class="anchorjs-icon"></span
+                      ></a>
+                    </h5>
+                  </td>
+                  <td class="type-info">Semibold 14px</td>
+                </tr>
+                <tr>
+                  <td><h6>h6. Bootstrap heading</h6></td>
+                  <td class="type-info">Semibold 12px</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="grid_3 grid_5 w3l">
+          <h3>Progress Bars</h3>
+          <div class="tab-content">
+            <div class="tab-pane active" id="domprogress">
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-primary"
+                  style="width: 20%"
+                ></div>
+              </div>
+              <p>Info with <code>progress-bar-info</code> class.</p>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-info"
+                  style="width: 60%"
+                ></div>
+              </div>
+              <p>Success with <code>progress-bar-success</code> class.</p>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-success"
+                  style="width: 30%"
+                ></div>
+              </div>
+              <p>Warning with <code>progress-bar-warning</code> class.</p>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-warning"
+                  style="width: 70%"
+                ></div>
+              </div>
+              <p>Danger with <code>progress-bar-danger</code> class.</p>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-danger"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <p>Inverse with <code>progress-bar-inverse</code> class.</p>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-inverse"
+                  style="width: 40%"
+                ></div>
+              </div>
+              <p>Inverse with <code>progress-bar-inverse</code> class.</p>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-success"
+                  style="width: 35%"
+                >
+                  <span class="sr-only">35% Complete (success)</span>
+                </div>
+                <div
+                  class="progress-bar progress-bar-warning"
+                  style="width: 20%"
+                >
+                  <span class="sr-only">20% Complete (warning)</span>
+                </div>
+                <div
+                  class="progress-bar progress-bar-danger"
+                  style="width: 10%"
+                >
+                  <span class="sr-only">10% Complete (danger)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    <!-- //typography -->
+    <!-- footer -->
+    {% include 'footer.html' %}
+    <!-- //footer -->
+    <!--Start-slider-script-->
+    <script src="{% static "js/SmoothScroll.min.js" %}"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+       
+
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
+  </body>
+</html>

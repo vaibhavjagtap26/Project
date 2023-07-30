@@ -1,0 +1,384 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dreams Travel With Travelo</title>
+    <link href="images/favicon.jpg" rel="icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Travel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- bootstrap-css -->
+    <link
+      href="{% static "css/bootstrap.css" %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="{% static "stylesheet" href="css/style.css" %}" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="{% static "css/font-awesome.css" %}" rel="stylesheet" />
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Raleway:100,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <!-- //font -->
+    <script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    
+    <style>
+      bg-white{color:white}
+    </style>
+   
+  </head>
+  <body>
+    <!-- banner -->
+    {% include 'header.html'%}
+    
+    <!-- //banner -->
+    <!-- modal -->
+    <div
+      class="modal about-modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Travel</h4>
+          </div>
+          <div class="modal-body">
+            <div class="agileits-w3layouts-info">
+              <img src="{% static "images/about2.jpg" %}" alt="" />
+              <p>
+                Duis venenatis, turpis eu bibendum porttitor, sapien quam
+                ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
+                ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+                Pellentesque pellentesque tempor enim, in dapibus turpis
+                porttitor quis. Suspendisse ultrices hendrerit massa. Nam id
+                metus id tellus ultrices ullamcorper. Cras tempor massa luctus,
+                varius lacus sit amet, blandit lorem. Duis auctor in tortor sed
+                tristique. Proin sed finibus sem
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //modal -->
+    <!-- about -->
+    <div class="section w3ls-banner-btm-main">
+      <div class="container bg-white">
+        <h2 class="heading-agileinfo">
+          About Us<span>Exclusive Holidays for Any Travelers</span>
+        </h2>
+        <div class="banner-btm">
+          <div class="col-md-6 banner-btm-g1">
+            <img src="{% static "images/about.jpg" %}" class="img-responsive" alt="" />
+          </div>
+          <div class="col-md-6 banner-btm-g2">
+            <h3 class="title-main">Welcome to Travel</h3>
+            <h4 class="sub-title">Best Travel services With Exiting Offers</h4>
+            <p>
+              We believe that travel is not just about visiting new places, but
+              also about connecting with local cultures, making new friends, and
+              creating lifelong memories. That's why we strive to provide
+              meaningful travel experiences that go beyond just ticking off a
+              checklist of tourist attractions.
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //about -->
+    <!-- offers -->
+    <div class="offers">
+      <div class="container">
+        <h3 style="color: white" class="heading-agileinfo white-w3ls">
+          Our Offers<span style="color: white" class="black-w3ls"
+            >Limited Period Of Time!!!!</span
+          >
+        </h3>
+
+        <div class="offers-grids">
+          <div class="col-md-6 wthree-offers-left">
+            <div class="offers-left-heading">
+              <h4>
+                This will help build trust with your audience and ensure that
+                they have a positive experience with your brand.
+              </h4>
+            </div>
+            <div class="offers-left-grids">
+              <div class="offers-number">
+                <p>1</p>
+              </div>
+              <div class="offers-text">
+                <p>
+                  Catchy Headlines: Use attention-grabbing headlines to make
+                  your offers stand out. For example, "Limited Time Offer: Save
+                  30% on Your Next Vacation!" or "Exclusive Deal: Get a Free
+                  Night Stay with Your Hotel Booking."
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="offers-left-grids offers-left-middle">
+              <div class="offers-number">
+                <p>2</p>
+              </div>
+              <div class="offers-text">
+                <p>
+                  Clear and Concise Information: Make sure your offer details
+                  are clear and easy to understand. Include information such as
+                  travel dates, destinations, discounts or promo codes, and any
+                  other relevant information.
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="offers-left-grids">
+              <div class="offers-number">
+                <p>3</p>
+              </div>
+              <div class="offers-text">
+                <p>
+                  Urgency: Create a sense of urgency to encourage your audience
+                  to take action. For example, use phrases such as "limited time
+                  offer" or "book now before it's too late."
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-md-6 wthree-offers-right">
+            <h5>
+              Engaging Content: Use engaging content to entice your audience.
+              Include high-quality images or videos of the destinations, hotels,
+              or activities included in the offer. Add personal stories or
+              travel tips to make the offer more relatable and compelling.
+            </h5>
+            <p>
+              Mobile Optimization: Ensure that your website and offers are
+              mobile-optimized, as many travelers book their trips using their
+              smartphones or tablets.
+            </p>
+            <ul>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Discounted flights or hotel rooms</a
+                >
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i> Bundle
+                  packages including flights, accommodations, and activities
+                </a>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Exclusive member discounts or loyalty programs</a
+                >
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Last-minute deals for spontaneous travelers
+                </a>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i>Seasonal
+                  sales during holidays or peak travel times</a
+                >
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  Early-bird booking discounts for planning ahead</a
+                >
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i> Ut Flash
+                  sales for limited time periods</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- offers -->
+    <!-- /team -->
+    <div class="w3-team" id="models">
+      <div class="w3-team-head">
+        <h3 class="heading-agileinfo">
+          Our Team<span>Provide Quality Travel Experiences</span>
+        </h3>
+      </div>
+      <div class="container">
+        <div class="w3-team-grids">
+          <div class="col-md-3 w3-team-grid">
+            <img src="{% static "images/c4.jpg" %}" class="img-responsive" alt="img" />
+            <h3>RICKY ROY</h3>
+            <p>Travel Agent</p>
+            <ul class="team-social">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3-team-grid">
+            <img src="{% static "images/c5.jpg" %}" class="img-responsive" alt="img" />
+            <h3>BEN STARC</h3>
+            <p>Co-Founder</p>
+            <ul class="team-social">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3-team-grid">
+            <img src="{% static "images/c6.jpg" %}" class="img-responsive" alt="img" />
+            <h3>Mitchel JON</h3>
+            <p>Travel Advisor</p>
+            <ul class="team-social">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3-team-grid">
+            <img src="{% static "images/t3.jpg" %}" class="img-responsive" alt="img" />
+            <h3>joy smith</h3>
+            <p>Travel guide</p>
+            <ul class="team-social">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3-team-grid">
+            <img src="{% static "images/t1.jpg" %}"lass="img-responsive" alt="img" />
+            <h3>Lucia McClain</h3>
+            <p>Social Media Manager</p>
+            <ul class="team-social">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 w3-team-grid">
+            <img src="{% static "images/t2.jpg" %}"class="img-responsive" alt="img" />
+            <h3>King Larson</h3>
+            <p>Adventure Specialist</p>
+            <ul class="team-social">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //team -->
+
+    <!-- footer -->
+    {% include 'footer.html' %}
+    <!-- //footer -->
+    <!--Start-slider-script-->
+    <script src="{% static "js/SmoothScroll.min.js" %}"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        
+
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
+  </body>
+</html>

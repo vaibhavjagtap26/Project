@@ -1,0 +1,380 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dreams Travel With Travelo</title>
+    <link href="images/favicon.jpg" rel="icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Travel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- bootstrap-css -->
+    <link
+      href="{% static "css/bootstrap.css" %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="{% static "stylesheet" href="css/style.css" %}" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="{% static "css/font-awesome.css" %}" rel="stylesheet" />
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Raleway:100,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"%}"
+      rel="stylesheet"
+    />
+    <!-- //font -->
+    <script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <!-- banner -->
+    {% include 'header.html' %}
+    <!-- //banner -->
+    <!-- modal -->
+    <div
+      class="modal about-modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Travel</h4>
+          </div>
+          <div class="modal-body">
+            <div class="agileits-w3layouts-info">
+              <img src="{% static "images/about2.jpg " %}" alt="" />
+              <p>
+                Duis venenatis, turpis eu bibendum porttitor, sapien quam
+                ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
+                ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+                Pellentesque pellentesque tempor enim, in dapibus turpis
+                porttitor quis. Suspendisse ultrices hendrerit massa. Nam id
+                metus id tellus ultrices ullamcorper. Cras tempor massa luctus,
+                varius lacus sit amet, blandit lorem. Duis auctor in tortor sed
+                tristique. Proin sed finibus sem
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //modal -->
+    <!-- icons -->
+    <div class="w3_wthree_agileits_icons main-grid-border">
+      <div class="container">
+        <h2 class="heading-agileinfo">
+          Icons<span>Exclusive Holidays for Any Travelers</span>
+        </h2>
+        <div class="grid_3 grid_4 w3_agileits_icons_page">
+          <div class="icons">
+            <h3 class="agileits-icons-title">Font Awesome Icons</h3>
+            <section id="new">
+              <h3 class="page-header page-header icon-subheading">
+                30 New Icons
+              </h3>
+
+              <div class="row fontawesome-icon-list">
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-asl-interpreting" aria-hidden="true"></i>
+                    fa-asl-interpreting
+                    <span class="text-muted">(alias)</span></a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-audio-description" aria-hidden="true"></i>
+                    fa-audio-description</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-blind" aria-hidden="true"></i> fa-blind</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-braille" aria-hidden="true"></i>
+                    fa-braille</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-deaf" aria-hidden="true"></i> fa-deaf</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-deafness" aria-hidden="true"></i> deafness
+                    <span class="text-muted">(alias)</span></a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-envira" aria-hidden="true"></i>
+                    fa-envira</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-fa" aria-hidden="true"></i> fa-fa
+                    <span class="text-muted">(alias)</span></a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-first-order" aria-hidden="true"></i>
+                    fa-first-order</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-font-awesome" aria-hidden="true"></i>
+                    fa-font-awesome</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-gitlab" aria-hidden="true"></i>
+                    fa-gitlab</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-glide" aria-hidden="true"></i> fa-glide</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-glide-g" aria-hidden="true"></i>
+                    fa-glide-g</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-google-plus-circle" aria-hidden="true"></i>
+                    fa-google-plus-circle
+                    <span class="text-muted">(alias)</span></a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i
+                      class="fa fa-google-plus-official"
+                      aria-hidden="true"
+                    ></i>
+                    fa-google-plus-official</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
+                    fa-hard-of-hearing
+                    <span class="text-muted">(alias)</span></a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i>
+                    fa-instagram</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-low-vision" aria-hidden="true"></i>
+                    fa-low-vision</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-pied-piper" aria-hidden="true"></i>
+                    fa-pied-piper</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    fa-question-circle-o</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-sign-language" aria-hidden="true"></i>
+                    fa-sign-language</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-signing" aria-hidden="true"></i> fa-signing
+                    <span class="text-muted">(alias)</span></a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-snapchat" aria-hidden="true"></i>
+                    fa-snapchat</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                    fa-snapchat-ghost</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                    fa-snapchat-square</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-themeisle" aria-hidden="true"></i>
+                    fa-themeisle</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-universal-access" aria-hidden="true"></i>
+                    fa-universal-access</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-viadeo" aria-hidden="true"></i>
+                    fa-viadeo</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-viadeo-square" aria-hidden="true"></i>
+                    fa-viadeo-square</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i>
+                    fa-volume-control-phone</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+                    fa-wheelchair-alt</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-wpbeginner" aria-hidden="true"></i>
+                    fa-wpbeginner</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-wpforms" aria-hidden="true"></i>
+                    fa-wpforms</a
+                  >
+                </div>
+
+                <div class="icon-box col-md-3 col-sm-4">
+                  <a class="agile-icon" href="#"
+                    ><i class="fa fa-yoast" aria-hidden="true"></i> fa-yoast</a
+                  >
+                </div>
+              </div>
+            
+    <!-- footer -->
+    {% include 'footer.html' %}
+    <!-- //footer -->
+    <!--Start-slider-script-->
+    <script src="{% static "js/SmoothScroll.min.js" %}"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+      
+
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
+  </body>
+</html>
