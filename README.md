@@ -1,1 +1,2 @@
 # Project
+ I designed and developed "Dreams Travel with Travelo," a travel ticket booking website. Utilizing frontend technologies such as HTML, CSS, Bootstrap, and foundational JavaScript, I crafted an attractive and user-friendly interface. On the backend, I employed Python and the Django framework to ensure smooth and secure functionality. My project showcases a seamless integration of frontend and backend technologies to deliver an exceptional user experience for travel ticket bookings.
